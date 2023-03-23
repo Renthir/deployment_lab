@@ -18,6 +18,14 @@ var rollbar = new Rollbar({
 rollbar.log('Hello world!')
 
 
+app.get('/cyber', (req, res) => {
+    try {
+        lemon()
+    } catch (error) {
+        console.log(error)
+        rollbar.warning(error)
+    }
+})
 
 
 app.listen(4000, () => console.log('App up on 4000'))
