@@ -10,20 +10,14 @@ function doAThing(){
 }
 
 function doAnotherThing(){
-    let body = {
-
-    }
-    axios.post('http://54.183.238.138/' + 'punk', body)
+    axios.get('http://54.183.238.138/' + 'punk')
     .then((res) => {
         
     })
 }
 
 function doSomethingElse(){
-    let body = {
-        
-    }
-    axios.post('http://54.183.238.138/' + 'gothic', body)
+    axios.get('http://54.183.238.138/' + 'gothic')
     .then((res) => {
         
     })

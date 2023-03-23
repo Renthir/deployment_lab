@@ -27,7 +27,7 @@ app.get('/cyber', (req, res) => {
     }
 })
 
-app.post('/punk', (req, res) => {
+app.get('/punk', (req, res) => {
     try {
         lime()
     } catch (error) {
