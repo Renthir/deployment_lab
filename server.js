@@ -23,6 +23,24 @@ app.get('/cyber', (req, res) => {
         lemon()
     } catch (error) {
         console.log(error)
+        rollbar.error(error)
+    }
+})
+
+app.post('/punk', (req, res) => {
+    try {
+        lime()
+    } catch (error) {
+        console.log(error)
+        rollbar.critical(error)
+    }
+})
+
+app.get('/gothic', (req, res) => {
+    try {
+        soda()
+    } catch (error) {
+        console.log(error)
         rollbar.warning(error)
     }
 })

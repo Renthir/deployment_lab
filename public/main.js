@@ -20,7 +20,10 @@ function doAnotherThing(){
 }
 
 function doSomethingElse(){
-    axios.get('http://54.183.238.138/' + 'gothic')
+    let body = {
+        
+    }
+    axios.post('http://54.183.238.138/' + 'gothic', body)
     .then((res) => {
         
     })
